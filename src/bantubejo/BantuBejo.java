@@ -30,10 +30,8 @@ public class BantuBejo {
         
         
         // KERAMIK B        
-        Keramik keramikB = new Keramik();
+        Keramik keramikB = new Keramik(40, 40);
         keramikB.jenis = 'B';
-        keramikB.lebar = 40;
-        keramikB.panjang = 40;
         keramikB.satuBox = 5;
         keramikB.harga = 65000;
         keramikB.hasilLuas = keramikB.hitungLuas();
@@ -44,11 +42,7 @@ public class BantuBejo {
         
         
         // KERAMIK C        
-        Keramik keramikC = new Keramik();
-        keramikC.jenis = 'C';
-        keramikC.lebar = 30;
-        keramikC.panjang = 40;
-        keramikC.satuBox = 8;
+        Keramik keramikC = new Keramik('C',40,30,8);
         keramikC.harga = 60000;
         keramikC.hasilLuas = keramikC.hitungLuas();
         keramikC.convertToMeter();
