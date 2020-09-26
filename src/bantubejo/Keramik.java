@@ -14,6 +14,22 @@ public class Keramik {
     int panjang, lebar, satuBox, harga, dibutuhkan = 100, totalSeluruhBox, totalHarga;
     float hasilLuas;
     
+    Keramik(){
+        this.jenis = 'A';
+    }
+    
+    Keramik(int p, int l){
+        this.panjang = p;
+        this.lebar = l;
+    }
+    
+    Keramik(char j, int p, int l, int s){
+        this.jenis = j;
+        this.panjang = p;
+        this.lebar = l;
+        this.satuBox = s;
+    }
+    
     
     int hitungLuas(){
         return this.panjang * this.lebar;
